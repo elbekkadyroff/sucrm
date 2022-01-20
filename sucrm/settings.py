@@ -81,8 +81,16 @@ WSGI_APPLICATION = 'sucrm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd5991dgguobsbh',
+        'HOST': 'ec2-3-227-15-75.compute-1.amazonaws.com',
+        'USER': 'ncyyyuwrasnson',
+        'PASSWORD': '16035e9a12029025c563a8082a50c3aa6ba8e1ced1f1bd711022326ede7df480',
+        'PORT': '5432',
+        
     }
 }
 
